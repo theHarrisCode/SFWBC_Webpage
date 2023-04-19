@@ -56,18 +56,20 @@ body {
     word-spacing:15px;
 }
 
-.intro-body {
+.intro-container {
     position: relative;
     margin-top: 40px;
     /* height: 40px; */
-    display: relative;
+    display: grid;
     align-items: center;
-    justify-content: center;
-    overflow: auto;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    column-gap: 5px;
+    /* justify-content: center; */
+    /* overflow: auto; */
 }
 
 /* Slideshow Container*/
-.slideshow-container {
+/* .slideshow-container {
     max-width: 5000px;
     display: inline-block;
     position: absolute;
@@ -75,20 +77,20 @@ body {
     left: 5%;
     margin-top: 70px;
     width: 2500px;
-    /* height: 100px; */
-}
+    height: 100px;
+} */
 
 /* Number Text */
-.numbertext {
+/* .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     bottom: 40px;
-}
+} */
 
 /* Bullet Indicator */
-.dot {
+/* .dot {
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -98,7 +100,7 @@ body {
     transition: background-color 0.6s ease;
     position: relative;
     left: 20%;
-}
+} */
 
 .active {
     background-color: #717171;
@@ -126,19 +128,23 @@ body {
     position: absolute;
     right: 20px;
     /* display: inline; */
-    left: 200px;
+    /* left: 200px; */
     float: left;
+    width: 500px;
+    font-size: 40px;
+    top: 0;
 }
 
 .slide {
-    width: 300px;
+    width: 100%;
 }
 
 .slideshow {
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
     position: relative;
     overflow: hidden;
+    left: 50px;
 }
 /********************** ID SELECTOR ************************/
 
